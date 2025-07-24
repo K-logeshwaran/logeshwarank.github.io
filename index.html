@@ -1,132 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yourdevlogesh</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logeshwaran Portfolio</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Logeshwaran Portfolio" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/tailwind-build.css" /> -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tailwind-runtime.css">
+    <!--replace with path to your tailwind runtime-->
 </head>
-<body>
-    <section class="full first" >
-        <h3 id="intro" >HI MY NAME IS</h3>
-        <h1 class="imp">Logeshwaran K.</h1>
-        <h1 class="imp">Am a full-stack dev.</h1>
-        <p class="about" > I am <a href="https://github.com/K-logeshwaran" style="color: #0D9CE2 ;">Logeshwaran K</a>  .I am  an UG (Under Graduate) student at pursuing BCA at <a href="https://www.bhc.edu.in/" style="color: #0D9CE2 ;">Bishop Heber College trichy</a>       </p>
-        <button class="demo on" ><a href="https://www.linkedin.com/in/k-logesh-waran-a73a98223"> Do you want to work with me ?</a></button>
-        <h1 class="weapon" style="margin-left:1rem ;">My weapon of choice with exprience :</h1>
-        <ul class="exprience">
-            <li>Javascript [1 year+] </li>
-            <li> HTML and CSS [1 year+] </li>
-            <li>React [6 months+] </li>
-            <li>nodejs (express) [4 months+] </li>
-            <li>MongoDb [2 months+] </li>
-            <li> MERN-stack [2 months+] </li>   
-        </ul>
-    </section>
-    <section class=" big second">
-        <img src="./images/profile.jpg" alt="">
-        <div class="holder">
-            <p>
-                Myself <a href="https://github.com/K-logeshwaran" style="color: #0D9CE2 ;">Logeshwaran K</a> . I am a self taught developer from Manapparai,Trichy,India.
-                I love building projects . I want to work with some team to develop my exprience
-                Favourite song "Industry Baby " by Li Nas X 
-            </p>
-            <div class="inner">
-                <a href="https://github.com/K-logeshwaran" class="smallDemo" >Git Hub </a>
-                <a href="https://www.linkedin.com/in/k-logesh-waran-a73a98223" class="smallDemo">LinkedIn </a>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff] tw-font-mono">
+    <header
+        class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around">
+        <a class="tw-h-[50px] tw-p-[4px] tw-text-2xl tw-font-medium" href="">
+            Logesh
+        </a>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+            <div
+                class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links" href=""> About Me </a>
+                <a class="header-links" href="#works"> Work </a>
+                <a class="header-links" href="#awards"> Awards </a>
+                <a class="header-links" href="/resume.pdf" download="Logeshwaran_Resume.pdf">Resume</a>
+                <a class="header-links" href="mailto:klogeshwaran003@gmail.com">Contact me</a>
+
+            </div>
+            <div
+                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+                <a href="https://www.linkedin.com/in/logeshwaran-kumar-a73a98223/" aria-label="signup"
+                    class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-bg-black tw-p-1 tw-pl-4 tw-text-white">
+                    <span>Get in touch</span>
+                    <div
+                        class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-white tw-font-semibold tw-text-black">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden"
+            onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+    </header>
+
+    <section
+        class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]">
+        <div
+            class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col">
+            <div class="tw-flex tw-flex-col tw-place-content-center">
+                <div
+                    class="tw-flex tw-flex-wrap tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[85px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                    <span class="reveal-hero-text tw-bg-green-200 tw-p-1 tw-px-6">
+                        Logeshwaran K
+                    </span>
+                    <br />
+                    <span class="reveal-hero-text">
+                        Junior.Software Developer</span>
+                </div>
+                <div class="reveal-hero-text tw-mt-2 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full">
+                   I am a self-motivated and self-disciplined Junior Software Developer with a strong foundation in Javascipt/NodeJS, C/C++, Typescript, Python, and Go, and practical experience in building real-world applications—anything from content-generating bots and lean JSON databases to terminal-themed personal sites. My projects demonstrate technical skill and innovative problem-solving.
+                </div>
+
+                <div class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2">
+                    <a href="https://www.linkedin.com/in/logeshwaran-kumar-a73a98223/" aria-label="signup"
+                        class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-border-[1px] tw-border-solid tw-border-black tw-bg-white tw-p-1 tw-pl-4 tw-text-black tw-transition-colors tw-duration-[0.5s] hover:tw-bg-black hover:tw-text-white">
+                        <span>Get in touch</span>
+                        <div
+                            class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-black tw-font-semibold tw-text-white">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]">
+                <div
+                    class="tw-relative tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]">
+                    <img src="./assets/images/home/hero-crop-2.jpg" alt="app"
+                        class="reveal-hero-img tw-z-[1] tw-h-full tw-w-full tw-object-contain" />
+                </div>
             </div>
         </div>
     </section>
-    <section class="projects">
-        <div class="full lists">
-            <img src="./images/recipeApp.png" alt="">
-            <div class="right">
-                <h1 class="title">The Recipe App</h1>
-                <p class="abtctx">This app is my first successfull  project. It's not a full stack project it's a frontend only application with  react. You can find all the 1000+ 😋 recipes from <a href="https://spoonacular.com/food-api" style="color: #0D9CE2 ;">spoonacular api</a> .It also has a search funcnality [It's not 🚀deployed due to my finicial problem 🥲] </p>
-                <a href="https://github.com/K-logeshwaran/recipe-app"class="git">🚀git repo</a>
-                <h3 class="git " style="color: #fff;">Tech Stack used :</h3>
-                <ul class="stacks">
-                    <li>✔️ React Js</li>
-                    <li>✔️ Spoonacular API</li>
-                    <li>✔️ CSS</li>
-                </ul>
-                <p href="#" class="demo disable on" aria-disabled="true">Demo currently not available!</p>
+
+    <section
+    id="works"
+        class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-overflow-hidden tw-p-6 tw-py-5">
+        <h3 class="reveal-up tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+            Past works
+        </h3>
+        <div class="reveal-up tw-my-4 tw-h-[1px] tw-w-[80%] tw-bg-black"></div>
+        <div class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1669655158172/9xdgXYh_5.png?auto=compress,format&format=webp" class="tw-h-full tw-w-full tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Video Editor Bot</h3>
+                    <p class="tw-text-gray-600">
+                   This bot automatically generates content for YouTube Shorts using Python. It leverages an API to fetch random anime quotes, which are then formatted for short-form video content creation
+                    </p>
+                    <a href="https://yourdevlogesh033.hashnode.dev/youtube-bot-with-python?%20fbclid=PAZXh0bgNhZW0CMTEAAaYriX2P7LqGoZEZL4AJcQtM1WmQqzUXZlN" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="https://raw.githubusercontent.com/K-logeshwaran/logeshTerminalSite.github.io/refs/heads/main/images/preview.png" class=" tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Terminal Themed Portfolio</h3>
+                    <p class="tw-text-gray-600">
+                        Created a personal portfolio website inspired by a terminal theme, showcasing projects and skills in a unique, developer-friendly interface. The design emulates a command-line experience, offering a minimalist yet interactive way for visitors to explore my work and background.
+                    </p>
+                    <a href="https://k-logeshwaran.github.io/logeshTerminalSite.github.io/" class="tw-mt-4">
+                        <span>Visit Site</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="./assets/images/home//task.png" class=" tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Task Manager</h3>
+                    <p class="tw-text-gray-600">
+                        Built a Task Manager application using React.js during an internship, featuring full CRUD (Create, Read, Update, Delete) functionality with persistent local storage. Designed a clean, responsive user interface for seamless task management across devices. The application was deployed on Netlify for public access
+                    </p>
+                    <a href="https://joyful-profiterole-fa9cb8.netlify.app/" class="tw-mt-4">
+                        <span>Visit Site</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="./assets/images/home/vcare.png" class="tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Vcare.ai</h3>
+                    <p class="tw-text-gray-600">
+                       Designed and developed a comprehensive CFO portal and employee management system for VcareAI, a Chennai-based startup. The frontend was built using React with a focus on responsive UI/UX tailored for finance operations and HR workflows. The backend was developed using Node.js and MongoDB, featuring RESTful APIs to handle employee data, payroll, leave tracking, and role-based access control. Integrated authentication, real-time updates, and data analytics dashboards to deliver actionable insights for CFO-level decision-making.
+                    </p>
+                    <a href="https://vcareai.netlify.app/" class="tw-mt-4">
+                        <span>Visit Site</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="https://dbdb.io/media/logos/toydb.svg" class=" tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">ToyDB & toydb_query - Database 	</h3>
+                    <p class="tw-text-gray-600">
+                        ToyDB is a lightweight, file-based database that uses JSON as its primary data format, making it easy to read, inspect, and manipulate structured data. It stores data directly on the file system, removing the need for a separate server and simplifying management. Data is organized into collections of JSON documents, and users can perform intuitive queries for efficient retrieval. Additionally, ToyDB offers high configurability, allowing customization of database location and settings to suit specific application needs.
+                    </p>
+                    <a href="https://github.com/K-logeshwaran/toyDB/" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="./assets/images/home/blog.png"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Blog Application-Personal Project </h3>
+                    <p class="tw-text-gray-600">
+                        Developed a full-featured personal blog application using Next.js, incorporating dynamic routing, server-side rendering (SSR), and static site generation (SSG). Blog content was managed using Markdown files, allowing easy updates without the need for a database. Key features included blog categorization, custom post pages, reading time estimation, and SEO optimization. The frontend was styled with a responsive, accessible design using modern CSS. Tech Stack: Next.js, React, Markdown, JavaScript, CSS.
+                    </p>
+                    <a href=" https://logeshblogs.netlify.app/" class="tw-mt-4">
+                        <span>Visit Site</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="full lists">
-            <img src="./images/blogMania.png" alt="">
-            <div class="right">
-                <h1 class="title">The Blog-Mania</h1>
-                <p class="abtctx">This is my first successfull full stack project. It's kind of like a blog app . Users can upload a  <i class="material-icons"style="font-size:16px; color: #0D9CE2;"/>create</i>  content with a title and can have profile 🤖 and view others profile. Also has a custom authentication  </p>
-                <a href="https://github.com/K-logeshwaran/Blogmania-client"class="git">🚀git repo client</a>
-                <a href="https://github.com/K-logeshwaran/Blogmania-server"class="git">🚀git repo backend</a>
-                <h3 class="git " style="color: #fff;">Tech Stack used :</h3>
-                <ul class="stacks">
-                    <li>✔️ React Js</li>
-                    <li>✔️ Node js</li>
-                    <li>✔️ Express</li>
-                    <li>✔️ Mongo db</li>
-                    <li>✔️ MERN stack</li>
-                    <li>✔️ Heroku App</li>
-                </ul>
-                <a href="https://blogmania-client.herokuapp.com/" class="demo on">Demo</a>
+    </section>
+
+    <!-- done -->
+    <section
+    id="awards"
+        class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center lg:tw-p-6">
+        <div
+            class="tw-flex tw-h-full tw-w-full tw-justify-around tw-gap-8 tw-rounded-xl tw-bg-[#e7e6e685] tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col">
+            <div
+                class="reveal-up tw-flex tw-h-full tw-w-[15%] tw-place-content-center max-lg:tw-w-full lg:tw-sticky lg:tw-top-[15%]">
+                <h3 class="tw-text-center tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+                    Honors & <br>Awards
+                </h3>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-w-[50%] tw-flex-col tw-place-items-center tw-gap-10 tw-p-2 max-lg:tw-w-full">
+
+                <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+                    tw-border-2 tw-border-black  tw-p-2
+                    ">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                        src="./assets/images/awards/treasurer.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h3 class="
+                        mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+                        " style="font-weight: bold; font-size: 1.3rem;">Treasurer - BCA Association (2024-2025)</h3>
+                        <a href="https://bhc.edu.in/bhc/index.php" target="_blank" class="hover:no-underline"
+                            style="color: blue; text-decoration: underline;">Issued by Bishop Heber College </a>
+                        <p style="margin-top: .7rem;" class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Awarded for serving as Treasurer of the BCA Association (2024–2025) at Bishop Heber College.
+                            Recognized for managing finances, coordinating 40+ events (including the national-level
+                            symposium "Creation" and the 3rd International Conference), and actively contributing as a
+                            senior office bearer and a member of the Institution's Innovation Council (IIC).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+                    tw-border-2 tw-border-black  tw-p-2
+                    ">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                        src="./assets/images/awards/outgoing_project.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h3 class="
+                        mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+                        " style="font-weight: bold; font-size: 1.3rem;">Best Out Going Project of the Year (2024-2025)
+                        </h3>
+                        <a href="https://bhc.edu.in/bhc/index.php" target="_blank" class="hover:no-underline"
+                            style="color: blue; text-decoration: underline;">Issued by Bishop Heber College </a>
+                        <p style="margin-top: .7rem;" class="mb-3 font-normal text-gray-700 dark:text-gray-400">Received
+                            the Best Outgoing Project Award for outstanding innovation and implementation in the
+                            final-year project during the academic year 2024–2025.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+                    tw-border-2 tw-border-black  tw-p-2
+                    ">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                        src="./assets/images/awards/webbuilder.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h3 class="
+                        mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+                        " style="font-weight: bold; font-size: 1.3rem;">SWAP 2K23</h3>
+                        <a href="https://jmc.edu/" target="_blank" class="hover:no-underline"
+                            style="color: blue; text-decoration: underline;">Issued by Jamal Mohamed College </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Secured First Prize in the WebBuilder event at SWAP 2K23, a technical symposium organized by Jamal Mohamed College.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+                    tw-border-2 tw-border-black  tw-p-2
+                    ">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                        src="./assets/images/awards/threads.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h3 class="
+                        mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+                        " style="font-weight: bold; font-size: 1.3rem;">SWAP 2K23</h3>
+                         <a href="https://jmc.edu/" target="_blank" class="hover:no-underline"
+                            style="color: blue; text-decoration: underline;">Issued by Jamal Mohamed College </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Secured First Prize in the Game of Threads (debugging event) at SWAP 2K23, a technical symposium organized by Jamal Mohamed College.</p>
+                    </div>
+                </div>
+
 
             </div>
         </div>
-        <div class="full lists">
-            <img src="./images/chatApp.png" alt="">
-            <div class="right">
-                <h1 class="title">The Chat App</h1>
-                <p class="abtctx">
-                    In this app people can create chat rooms and can join them.
-                    Realtime chatting achived by web sockets .
-                    Has a custom authentication
-                    I failed to make a mobile view of it so it's not deployed yet.
-                    Working on it 🤞 hope  it came out soon. 😊
-                </p>
-                <a href="https://github.com/K-logeshwaran/chatApp-client"class="git">🚀git repo client</a>
-                <a href="https://github.com/K-logeshwaran/chatApp-backend"class="git">🚀git repo backend</a>
-                <h3 class="git " style="color: #fff;">Tech Stack used :</h3>
-                <ul class="stacks">
-                    <li>✔️ React Js</li>
-                    <li>✔️ Node js</li>
-                    <li>✔️ Express</li>
-                    <li>✔️ Mongo db</li>
-                    <li>✔️ MERN stack</li>
-                    <li>✔️ socket.io</li>
-                </ul>
-                <p href="#" class="demo disable on" aria-disabled="true">Demo currently not available!</p>
-
-            </div>
-        </div>
-        <div class="full lists">
-            <img src="./images/fileShare.png" alt="">
-            <div class="right">
-                <h1 class="title">File Uploader App</h1>
-                <p class="abtctx">
-                    May the UI of this app be terrible 
-                    of course it is but , See guys but it's one heck of a good app.
-                    You can upload a file and protect it with password, then it will give a link to your file 
-                    then you can share it with your friends to download it .
-                </p>
-                <a href="https://github.com/K-logeshwaran/file-sharing-app"class="git">🚀git repo</a>
-                <h3 class="git " style="color: #fff;">Tech Stack used :</h3>
-                <ul class="stacks">
-                    <li>✔️ React Js</li>
-                    <li>✔️ Node js</li>
-                    <li>✔️ Express</li>
-                    <li>✔️ Mongo db</li>
-                    <li>✔️ MERN stack</li>
-                    <li>✔️ Heroku App</li>
-                </ul>
-                <a href="https://share-files-mania.herokuapp.com/" class="demo on">Demo</a>
-            </div>
-        </div>
-        <div class="contact-me">Contact me on <a href="https://www.linkedin.com/in/k-logesh-waran-a73a98223" style="color: #0D9CE2 ;">LinkedIn</a    ></div>
     </section>
+    <!-- done -->
+
+   
+   
+
+    <hr class="tw-mt-4" />
+
+    <footer
+        class="tw-mt-auto tw-flex tw-min-h-[100px] tw-w-full tw-place-content-around tw-place-items-center tw-gap-3 tw-p-[2%] tw-px-[10%] tw-text-black max-md:tw-flex-col">
+        <div class="tw-flex tw-gap-6 tw-text-2xl">
+            <a href="https://github.com/K-logeshwaran/" aria-label="Github">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/logeshwaran-kumar-a73a98223/" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+
+            </a>
+            <a href="https://www.instagram.com/logeshwaran.k__?igsh=ZXFvcmFscm02enFj/" class="tw-h-[40px] tw-w-[40px]" aria-label="instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </footer>
 </body>
-</html>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./index.js"></script>
+
+</html>
